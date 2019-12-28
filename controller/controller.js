@@ -79,7 +79,7 @@ exports.gateway = (req, res, next) => {
             WHERE \
              gateway.id = ? \
             AND node.node_status = ws_energy.node_status.id\
-            AND gateway.id = node.idgateway;"
+            AND gateway.id = node.idgateway ORDER BY node.idnode;"
             connection.query(sql, [id], (err, results) => {
                 if(err){
                     return next(err)
