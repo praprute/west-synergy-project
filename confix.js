@@ -1,9 +1,9 @@
 module.exports = {
     dbOption: {
-        host: '128.199.161.137',
+        host: '{up to you}',
         user: 'admin',
-        password: 'brainwave',
+        password: '{}',
         port: 3306,
-        database: 'ws_energy'
+        database: '{dbname}'
     }
 }
